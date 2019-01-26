@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>物理エンジンのサンプル</title>
+    <script src="js/Box2D.web.js"></script>
+    <script src="js/enchant.min.js"></script>
+    <script src="js/Box2D.js"></script>
+    <script src="js/main.js"></script>
+    
+</head>
+<body>
+    <script>
+        var world = PhysicsWorld(0,9.8);
+        game.rootScene.onenterframe = function (){
+            world.steps(game.fps);
+        }
+
+        </script>
+</body>
+
+</html>

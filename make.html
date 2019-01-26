@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>マリオメーカー</title>
+    <link rel="stylesheet" href="css/make.css">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/enchant.min.js"></script>
+    <script src="js/practice.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="scroll_container">
+
+        <img src="imgs/IMG_4436.JPG" alt="" class="background_img">
+        <div class="continer0">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img00" class="block one" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img01" class="block one" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img02" class="block one" value="2">
+            <div class="pointer red0" value="3"></div>
+        </div>
+
+        <div class="block1">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img10" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img11" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img12" class="block" value="2">
+            <div class="pointer red1" value="3"></div>
+        </div>
+
+        <div class="block2">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img20" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img21" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img22" class="block" value="2">
+            <div class="pointer red2" id="block" value="3"></div>
+        </div>
+
+        <div class="block3">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img30" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img31" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img32" class="block" value="2">
+            <div class="pointer red3" id="block" value="3"></div>
+        </div>
+
+        <div class="block4">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img40" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img41" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img42" class="block" value="2">
+            <div class="pointer red4" id="block" value="3"></div>
+        </div>
+
+        <div class="block5">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img50" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img51" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img52" class="block" value="2">
+            <div class="pointer red5" id="block" value="3"></div>
+        </div>
+
+        <div class="block6">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img60" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img61" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img62" class="block" value="2">
+            <div class="pointer red6" id="block" value="3"></div>
+        </div>
+
+        <div class="block7">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img70" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img71" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img72" class="block" value="2">
+            <div class="pointer red7" id="block" value="3"></div>
+        </div>
+
+        <div class="block8">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img80" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img81" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img82" class="block" value="2">
+            <div class="pointer red8" id="block" value="3"></div>
+        </div>
+
+        <div class="block9">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img90" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img91" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img92" class="block" value="2">
+            <div class="pointer red9" id="block" value="3"></div>
+        </div>
+
+        <div class="block10">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img100" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img101" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img102" class="block" value="2">
+            <div class="pointer red10" id="block" value="3"></div>
+        </div>
+
+        <div class="block11">
+            <img src="imgs/IMG_4352.min.jpg" alt="" id="block_img110" class="block" value="0">
+            <img src="imgs/IMG_4354.min.jpg" alt="" id="block_img111" class="block" value="1">
+            <img src="imgs/IMG_4356.min.jpg" alt="" id="block_img112" class="block" value="2">
+            <div class="pointer red11" id="block" value="3"></div>
+        </div>
+
+        <div class="block12">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img120" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img121" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img122" class="block" value="2">
+            <div class="pointer red12" id="block" value="3"></div>
+        </div>
+
+        <div class="block13">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img130" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img131" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img132" class="block" value="2">
+            <div class="pointer red13" id="block" value="3"></div>
+        </div>
+
+        <div class="block14">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img140" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img141" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img142" class="block" value="2">
+            <div class="pointer red14" id="block" value="3"></div>
+        </div>
+
+        <div class="block15">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img150" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img151" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img152" class="block" value="2">
+            <div class="pointer red15" id="block" value="3"></div>
+        </div>
+
+        <div class="block16">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img160" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img161" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img162" class="block" value="2">
+            <div class="pointer red16" id="block" value="3"></div>
+        </div>
+
+        <div class="block17">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img170" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img171" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img172" class="block" value="2">
+            <div class="pointer red17" id="block" value="3"></div>
+        </div>
+
+        <div class="block18">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img180" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img181" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img182" class="block" value="2">
+            <div class="pointer red18" id="block" value="3"></div>
+        </div>
+
+        <div class="block19">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img190" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img191" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img192" class="block" value="2">
+            <div class="pointer red19" id="block" value="3"></div>
+        </div>
+
+        <div class="block20">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img200" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img201" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img202" class="block" value="2">
+            <div class="pointer red20" id="block" value="3"></div>
+        </div>
+
+        <div class="block21">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img210" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img211" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img212" class="block" value="2">
+            <div class="pointer red21" id="block" value="3"></div>
+        </div>
+
+        <div class="block22">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img220" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img221" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img222" class="block" value="2">
+            <div class="pointer red22" id="block" value="3"></div>
+        </div>
+
+        <div class="block23">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img230" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img231" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img232" class="block" value="2">
+            <div class="pointer red23" id="block" value="3"></div>
+        </div>
+
+        <div class="block24">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img240" class="block" value="0">
+            <img src="imgs/togesou.min.png" alt="" id="block_img241" class="block" value="1">
+            <img src="imgs/toge.min.png" alt="" id="block_img242" class="block" value="2">
+            <div class="pointer red24" id="block" value="3"></div>
+        </div>
+
+        <!-- <div class="block13">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img130" class="block" value ="0">
+            <img src="imgs/kuribo.min.png" alt="" id="block_img131" class="block" value ="1">
+            <img src="imgs/kuribo.min.png"" alt="" id="block_img132" class="block" value ="2">
+            <div class="pointer red13" id="block" value ="3"></div>
+        </div> -->
+    </div>
+    <div class="btn_container" data-toggle="buttons">
+        <div class="btn_1 active">
+            <input type="radio" value=0 id="radio1" name="grp1" onclick=""><img src="imgs\IMG_4352.jpg" alt="" id="img1">
+            <input type="radio" value=0 id="radio1" name="grp1" onclick=""><img src="imgs/kuribo.png" alt="" id="img5">
+        </div>
+
+        <div class="btn_2">
+            <input type="radio" value=1 id="radio2" name="grp1"><img src="imgs\IMG_4354.jpg" alt="" id="img2">
+            <input type="radio" value=1 id="radio2" name="grp1"><img src="imgs/togesou.png" alt="" id="img7">
+        </div>
+
+        <div class="btn_3">
+            <input type="radio" value=2 id="radio3" name="grp1"><img src="imgs\IMG_4356.jpg" alt="" id="img3">
+            <input type="radio" value=2 id="radio3" name="grp1"><img src="imgs/toge.png" alt="" id="img6">
+        </div>
+
+        <div class="btn_4">
+            <input type="radio" value=3 id="radio4" name="grp1"><img src="imgs/IMG_4422 (4).jpg" alt="" id="img4">
+            <input type="radio" value=3 id="radio4" name="grp1"><img src="imgs/IMG_4422 (4).jpg" alt="" id="img8">
+        </div>
+        <input type="button" value="決定" onclick="getRadioValue('grp1');" id="send">
+
+    </div>
+    <input type="text" id="title" placeholder="作成者">
+    <input type="text" id="maker" placeholder="タイトル">
+    <a href="data.html">
+        <input type="button" value="送信" id="end">
+    </a>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+        var blocks = [];
+        var middle_blocks = [];
+        x = 0;
+        const block = document.getElementById('block');
+        $('.block0').css('cssText', 'display:none !important');
+
+        function getRadioValue(name) {
+
+            //ラジオボタンオブジェクトを取得する
+            var radios = document.getElementsByName(name);
+
+            //取得したラジオボタンオブジェクトから選択されたものを探し出す
+            var result;
+            var middle;
+            if (x < 12) {
+                for (let i = 0; i < radios.length; i++) { //i=ブロック値
+                    if (radios[i].checked) {
+                        //選択されたラジオボタンのvalue値を取得する
+                        result = radios[i].value;
+                        if (result == 0) {
+                            blocks[x] = 0;
+                            break;
+                        }
+                        else if (result == 1) {
+                            blocks[x] = 2;
+                            break;
+                        }
+                        else if (result == 2) {
+                            blocks[x] = 1;
+                            break;
+                        }
+                        else if (result == 3) {
+                            blocks[x] = 3;
+                            break;
+                        }
+                        else {
+                            blocks[x] = 3;
+                            break;
+                        }
+                    }
+                }
+            } else {
+                for (let q = 0; q < radios.length; q++) { //i=ブロック値
+                    if (radios[q].checked) {
+                        //選択されたラジオボタンのvalue値を取得する
+                        middle = radios[q].value;
+                        if (middle == 0) {
+                            middle_blocks[x - 13] = 4;
+                            break;
+                        }
+                        else if (middle == 1) {
+                            middle_blocks[x - 13] = 5;
+                            break;
+                        }
+                        else if (middle == 2) {
+                            middle_blocks[x - 13] = 6;
+                            break;
+                        }
+                        else if (middle == 3) {
+                            middle_blocks[x - 13] = 7;
+                            break;
+                        }
+                        else {
+                            middle_blocks[x - 13] = 7;
+                            break;
+                        }
+                    }
+                    console.log(middle);
+                }
+            }
+            //x回目
+            x++;
+            console.log(middle_blocks);
+            console.log(blocks);
+
+            switch (x) {
+                case 1:
+                    $('.pointer.red0').css('cssText', 'display:none !important');
+                    $('.pointer.red1').css('cssText', 'display:block !important');
+                    // $('#img1').css('cssText','display:block !important');
+                    // $('#img2').css('cssText','display:block !important');
+                    // $('#img3').css('cssText','display:block !important');
+                    // $('#img4').css('cssText','display:block !important');
+                    // $('#img5').css('cssText','display:none !important');
+                    // $('#img6').css('cssText','display:none !important');
+                    // $('#img7').css('cssText','display:none !important');
+                    // $('#img8').css('cssText','display:none !important');
+                    if (result == 0) {
+                        $('#block_img00').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img01').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img02').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 2:
+                    $('.pointer.red1').css('cssText', 'display:none !important');
+                    $('.pointer.red2').css('cssText', 'display:block !important');
+
+                    if (result == 0) {
+                        $('#block_img10').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img11').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img12').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 3:
+                    $('.pointer.red2').css('cssText', 'display:none !important');
+                    $('.pointer.red3').css('cssText', 'display:block !important');
+
+
+                    if (result == 0) {
+                        $('#block_img20').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img21').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img22').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 4:
+                    $('.pointer.red3').css('cssText', 'display:none !important');
+                    $('.pointer.red4').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img30').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img31').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img32').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 5:
+                    $('.pointer.red4').css('cssText', 'display:none !important');
+                    $('.pointer.red5').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img40').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img41').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img42').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 6:
+                    $('.pointer.red5').css('cssText', 'display:none !important');
+                    $('.pointer.red6').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img50').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img51').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img52').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 7:
+                    $('.pointer.red6').css('cssText', 'display:none !important');
+                    $('.pointer.red7').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img60').css('cssText', 'display:block !important');
+                        console.log("aaaaaa");
+                    } else if (result == 1) {
+                        $('#block_img61').css('cssText', 'display:block !important');
+                        console.log("ccccc");
+                    } else if (result == 2) {
+                        $('#block_img62').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 8:
+                    $('.pointer.red7').css('cssText', 'display:none !important');
+                    $('.pointer.red8').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img70').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img71').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img72').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 9:
+                    $('.pointer.red8').css('cssText', 'display:none !important');
+                    $('.pointer.red9').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img80').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img81').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img82').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 10:
+                    $('.pointer.red9').css('cssText', 'display:none !important');
+                    $('.pointer.red10').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img90').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img91').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img92').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 11:
+                    $('.pointer.red10').css('cssText', 'display:none !important');
+                    $('.pointer.red11').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img100').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img101').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img102').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 12:
+                    $('.pointer.red11').css('cssText', 'display:none !important');
+                    $('.pointer.red12').css('cssText', 'display:block !important');
+                    $('#img1').css('cssText', 'display:none !important');
+                    $('#img2').css('cssText', 'display:none !important');
+                    $('#img3').css('cssText', 'display:none !important');
+                    $('#img4').css('cssText', 'display:none !important');
+                    $('#img5').css('cssText', 'display:block !important');
+                    $('#img6').css('cssText', 'display:block !important');
+                    $('#img7').css('cssText', 'display:block !important');
+                    $('#img8').css('cssText', 'display:block !important');
+                    if (result == 0) {
+                        $('#block_img110').css('cssText', 'display:block !important');
+                    } else if (result == 1) {
+                        $('#block_img111').css('cssText', 'display:block !important');
+                    } else if (result == 2) {
+                        $('#block_img112').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 13:
+                    $('.pointer.red12').css('cssText', 'display:none !important');
+                    $('.pointer.red13').css('cssText', 'display:block !important');
+                    $('.pointer.red13').css('cssText', 'display:block !important');
+
+                    if (middle == 0) {
+                        $('#block_img120').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img121').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img122').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 14:
+                    $('.pointer.red13').css('cssText', 'display:none !important');
+                    $('.pointer.red14').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img130').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img131').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img132').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 15:
+                    $('.pointer.red14').css('cssText', 'display:none !important');
+                    $('.pointer.red15').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img140').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img141').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img142').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 16:
+                    $('.pointer.red15').css('cssText', 'display:none !important');
+                    $('.pointer.red16').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img150').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img151').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img152').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 17:
+                    $('.pointer.red16').css('cssText', 'display:none !important');
+                    $('.pointer.red17').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img160').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img161').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img162').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 18:
+                    $('.pointer.red17').css('cssText', 'display:none !important');
+                    $('.pointer.red18').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img170').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img171').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img172').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 19:
+                    $('.pointer.red18').css('cssText', 'display:none !important');
+                    $('.pointer.red19').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img180').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img181').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img182').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 20:
+                    $('.pointer.red19').css('cssText', 'display:none !important');
+                    $('.pointer.red20').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img190').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img191').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img192').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 21:
+                    $('.pointer.red20').css('cssText', 'display:none !important');
+                    $('.pointer.red21').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img200').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img201').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img202').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 22:
+                    $('.pointer.red21').css('cssText', 'display:none !important');
+                    $('.pointer.red22').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img210').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img211').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img212').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 23:
+                    $('.pointer.red22').css('cssText', 'display:none !important');
+                    $('.pointer.red23').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img220').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img221').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img222').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+
+                case 24:
+                    $('.pointer.red23').css('cssText', 'display:none !important');
+                    $('.pointer.red24').css('cssText', 'display:block !important');
+                    if (middle == 0) {
+                        $('#block_img230').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img231').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img232').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                case 25:
+                    $('.pointer.red24').css('cssText', 'display:none !important');
+                    $('.pointer.red25').css('cssText', 'display:block !important');
+                    alert('名前とタイトルを入力して送信ボタンを押してください')
+                    if (middle == 0) {
+                        $('#block_img240').css('cssText', 'display:block !important');
+                    } else if (middle == 1) {
+                        $('#block_img241').css('cssText', 'display:block !important');
+                    } else if (middle == 2) {
+                        $('#block_img242').css('cssText', 'display:block !important');
+                    } else {
+
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        function abcd() {
+            console.log(blocks);
+        }
+        abcd();
+
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBQiAvFBdOC-EMi0pwWkRLgLby8pW8RKLY",
+            authDomain: "mariomaker-15e12.firebaseapp.com",
+            databaseURL: "https://mariomaker-15e12.firebaseio.com",
+            projectId: "mariomaker-15e12",
+            storageBucket: "mariomaker-15e12.appspot.com",
+            messagingSenderId: "89587172319"
+        };
+        firebase.initializeApp(config);
+        //   const beforePostRef= firebase.database().ref();
+        const newPostRef = firebase.database().ref();
+        //   const secondPostRef =firebase.firstPostRef().ref();;
+        $("#end").on("click", function () {
+            newPostRef.push({
+                username: $("#maker").val(),
+                title: $("#title").val(),
+                key: blocks,
+                key_middle: middle_blocks
+            });
+        });
+
+    </script>
+</body>
+
+</html>

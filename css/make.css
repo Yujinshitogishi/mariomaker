@@ -1,0 +1,386 @@
+#enchant-stage{
+    display: none;
+}
+
+body{
+    background-color: black;
+    position: relative;
+}
+
+/* 表示画面 */
+.scroll_container{
+    margin-left: auto;
+}
+
+.background_img{
+    position: relative;
+    
+}
+
+.block{
+    display: none;
+}
+
+/* .block0{
+    display: none;  
+} */
+
+.pointer{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    opacity: 0.4;
+    z-index: 11;
+    display: none;
+}
+
+.pointer.red0{
+    display: block;
+}
+
+#block_img00,#block_img01,#block_img02,.red0{
+    display: none;
+    position: absolute;
+    top: 360px;
+    left: 0;
+}
+
+#block_img10,#block_img11,#block_img12,.red1{
+    display: none;
+    position: absolute;
+    top: 360px;
+    left: 120px;
+}
+
+#block_img20,#block_img21,#block_img22,.red2{
+    display: none;
+    position: absolute;
+    top: 360px;
+    left: 240px;
+}
+
+#block_img30,#block_img31,#block_img32,.red3{
+    display: none;
+    position: absolute;
+    top: 360px;
+    left: 360px;
+}
+
+#block_img40,#block_img41,#block_img42,.red4{
+    position: absolute;
+    top: 360px;
+    left: 480px;
+}
+
+#block_img50,#block_img51,#block_img52,.red5{
+    position: absolute;
+    top: 360px;
+    left: 600px;
+}
+
+#block_img60,#block_img61,#block_img62,.red6{
+    position: absolute;
+    top: 360px;
+    left: 720px;
+}
+
+#block_img70,#block_img71,#block_img72,.red7{
+    position: absolute;
+    top: 360px;
+    left: 840px;
+}
+
+#block_img80,#block_img81,#block_img82,.red8{
+    position: absolute;
+    top: 360px;
+    left: 960px;
+}
+
+#block_img90,#block_img91,#block_img92,.red9{
+    position: absolute;
+    top: 360px;
+    left: 1080px;
+}
+
+#block_img100,#block_img101,#block_img102,.red10{
+    position: absolute;
+    top: 360px;
+    left: 1200px;
+}
+
+#block_img110,#block_img111,#block_img112,.red11{
+    position: absolute;
+    top: 360px;
+    left: 1320px;
+}
+
+#block_img120,#block_img121{
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+#block_img122{
+    position: absolute;
+    top:240px;
+    left: 0;
+}
+.red12{
+    position: absolute;
+    top: 240px;
+    left: 0px;
+}
+
+#block_img130,#block_img131{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+#block_img132{
+    position: absolute;
+    top:240px;
+    left: 120px;
+}
+.red13{
+    position: absolute;
+    top: 240px;
+    left: 120px;
+}
+
+#block_img140,#block_img141{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+#block_img142{
+    position: absolute;
+    top:240px;
+    left: 120px;
+}
+.red14{
+    position: absolute;
+    top: 240px;
+    left: 120px;
+}
+
+#block_img150,#block_img151{
+    position: absolute;
+    top: 300px;
+    left: 270px;
+}
+#block_img152{
+    position: absolute;
+    top:240px;
+    left: 240px;
+}
+.red15{
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+#block_img160,#block_img161{
+    position: absolute;
+    top: 300px;
+    left: 390px;
+}
+#block_img162{
+    position: absolute;
+    top:240px;
+    left: 360px;
+}
+.red16{
+    position: absolute;
+    top: 240px;
+    left: 360px;
+}
+
+#block_img170,#block_img171{
+    position: absolute;
+    top: 300px;
+    left: 510px;
+}
+#block_img172{
+    position: absolute;
+    top:240px;
+    left: 480px;
+}
+.red17{
+    position: absolute;
+    top: 240px;
+    left: 480px;
+}
+
+#block_img180,#block_img181{
+    position: absolute;
+    top: 300px;
+    left: 630px;
+}
+#block_img182{
+    position: absolute;
+    top:240px;
+    left: 600px;
+}
+.red18{
+    position: absolute;
+    top: 240px;
+    left: 600px;
+}
+
+#block_img190,#block_img191{
+    position: absolute;
+    top: 300px;
+    left: 750px;
+}
+#block_img192{
+    position: absolute;
+    top:240px;
+    left: 720px;
+}
+.red19{
+    position: absolute;
+    top: 240px;
+    left: 720px;
+}
+
+#block_img200,#block_img201{
+    position: absolute;
+    top: 300px;
+    left: 870px;
+}
+#block_img202{
+    position: absolute;
+    top:240px;
+    left: 840px;
+}
+.red20{
+    position: absolute;
+    top: 240px;
+    left: 840px;
+}
+
+#block_img210,#block_img211{
+    position: absolute;
+    top: 300px;
+    left: 990px;
+}
+#block_img212{
+    position: absolute;
+    top:240px;
+    left: 960px;
+}
+.red21{
+    position: absolute;
+    top: 240px;
+    left: 960px;
+}
+
+#block_img220,#block_img221{
+    position: absolute;
+    top: 300px;
+    left: 1110px;
+}
+#block_img222{
+    position: absolute;
+    top:240px;
+    left: 1080px;
+}
+.red22{
+    position: absolute;
+    top: 240px;
+    left: 1080px;
+}
+
+#block_img230,#block_img231{
+    position: absolute;
+    top: 300px;
+    left: 1230px;
+}
+#block_img232{
+    position: absolute;
+    top:240px;
+    left: 1200px;
+}
+.red23{
+    position: absolute;
+    top: 240px;
+    left: 1200px;
+}
+
+#block_img240,#block_img241{
+    position: absolute;
+    top: 300px;
+    left: 1350px;
+}
+#block_img242{
+    position: absolute;
+    top:240px;
+    left: 1320px;
+}
+.red24{
+    position: absolute;
+    top: 240px;
+    left: 1320px;
+}
+
+#block_img250,#block_img251{
+    position: absolute;
+    top: 300px;
+    left: 1350px;
+}
+#block_img252{
+    position: absolute;
+    top:240px;
+    left: 1320px;
+}
+.red25{
+    position: absolute;
+    top: 240px;
+    left: 1320px;
+}
+
+
+
+
+
+
+
+/* 選択画面 */
+.btn_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn_1,.btn_2,.btn_3,.btn_4{
+    position: relative;
+    display: block;
+    margin-right: 4vw;
+    /* display: flex;
+    justify-content: center; */
+}
+
+#radio1,#radio2,#radio3,#radio4{
+    position: absolute;
+    top: 12vh;
+    left: -3vw;
+}
+#radio5,#radio6,#radio7,#radio8{
+    position: absolute;
+    top: 12vh;
+    left: -3vw;
+    display: none;
+}
+
+#img1,#img2,#img3,#img4{
+    display: block;
+}
+
+#img5,#img6,#img7,#img8{
+    display: none;
+}
+
+#send{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}

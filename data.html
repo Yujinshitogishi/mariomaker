@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ううううう</title>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/enchant.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="js/mario.js"></script>
+</head>
+
+<body>
+    <p>
+        <div id="output"></div>
+    </p>
+    <div>
+        <div class="mt-5 container">
+            <div id="candidates" class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <!--username部分-->
+                        <a href="/user/{{$tweet->user_id}}">{{$tweet->user->name}}</a>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <!--ツイート内容部分-->
+                            <p>{{ $tweet->tweets_content }}</p>
+
+
+                            <form action="{{url('/tweet_like')}}" method="POST" class="form-horizontal">
+                                {{csrf_field()}}
+                                <cite title="Source Title">
+                                    <input type="hidden" name="like" id="like" value="{{$tweet->id}}" />
+                                    <button type="submit" class="btn btn-primary">LIKE{{$tweet->like->count()}}</button>
+                                </cite>
+                            </form>
+                            <footer class="blockquote-footer"><cite title="Source Title">{{ $tweet->created_at }}</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        </script>
+</body>
+
+</html>

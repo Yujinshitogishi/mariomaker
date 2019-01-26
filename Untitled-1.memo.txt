@@ -1,0 +1,10 @@
+Ctrl+X	行の切り取り (未選択時)
+Ctrl+Shift+Enter	上に行追加
+Shift+Alt+Down	カーソル行を下にコピー
+Ctrl+D	次のマッチを選択に追加 //同じ言葉を探す
+Ctrl+U	カーソル動作のUndo //空白の行まで移動
+F12	選択部分の定義に移動
+Ctrl+G	指定行に移動
+Ctrl+P	指定ファイルに移動
+Ctrl+Shift+N	新しいウィンドウを開く
+Ctrl+W	エディターを閉じる
